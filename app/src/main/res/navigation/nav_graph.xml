@@ -22,5 +22,9 @@
         <argument
             android:name="recipeId"
             app:argType="integer" />
+        <argument
+            android:name="recipeDetail"
+            app:argType="com.rogergcc.yapechallenge.domain.model.Recipe"
+            app:nullable="true" />
     </fragment>
 </navigation>

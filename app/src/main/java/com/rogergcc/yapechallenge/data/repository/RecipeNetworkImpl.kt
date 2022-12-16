@@ -4,6 +4,8 @@ import com.rogergcc.yapechallenge.data.RecipesApi
 import com.rogergcc.yapechallenge.data.remote.mapper.toRecipeD
 import com.rogergcc.yapechallenge.domain.model.Recipe
 import com.rogergcc.yapechallenge.domain.repository.RecipeNetwork
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -15,7 +17,11 @@ class RecipeNetworkImpl @Inject constructor(
     override suspend fun getRecipes(): List<Recipe> {
         // TODO: withContext(Dispatchers.IO) { }
         // TODO: provide Dispatchers using Dependency Injection
-        return api.getRecipes().map { it.toRecipeD() }
+        return withContext(Dispatchers.IO) {
+            api.getRecipes().map {
+                it.toRecipeD()
+            }
+        }
     }
 }
 

@@ -17,13 +17,15 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideRecipesApi(): RecipesApi {
-        return Retrofit.Builder()
-            .baseUrl(BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
-            .build()
-            .create(RecipesApi::class.java)
-    }
+    fun provideRecipesApi(): Retrofit = Retrofit.Builder()
+        .baseUrl(BASE_URL)
+        .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
+        .build()
+
+    @Singleton
+    @Provides
+    fun provideWebService(retrofit: Retrofit): RecipesApi = retrofit.create(RecipesApi::class.java)
+
 }
 
 

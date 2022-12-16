@@ -26,8 +26,8 @@ class RecipeListAdapter : ListAdapter<Recipe, RecipeListAdapter.ViewHolder>(Diff
     }
 
     // onItemClickListener
-    private var onItemClickListener: ((Int) -> Unit)? = null
-    fun setOnItemClickListener(listener: (Int) -> Unit) {
+    private var onItemClickListener: ((Recipe) -> Unit)? = null
+    fun setOnItemClickListener(listener: (Recipe) -> Unit) {
         onItemClickListener = listener
     }
 
@@ -42,8 +42,10 @@ class RecipeListAdapter : ListAdapter<Recipe, RecipeListAdapter.ViewHolder>(Diff
 
 
                 // onItemClickListener
-                root.setOnClickListener {
-                    onItemClickListener?.let { it(recipe.id) }
+                mCVRecipe.setOnClickListener {
+                    onItemClickListener?.let { itemSelected ->
+                        itemSelected(recipe)
+                    }
                 }
             }
         }

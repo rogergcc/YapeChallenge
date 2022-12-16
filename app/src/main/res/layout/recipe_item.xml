@@ -6,62 +6,56 @@
     android:layout_height="wrap_content">
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mCVRecipe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="4dp"
-        app:cardCornerRadius="4dp"
+        android:layout_marginVertical="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
+        app:cardCornerRadius="6dp"
         app:cardElevation="0dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
 
-        <RelativeLayout
+        <LinearLayout
+            android:layout_margin="4dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cvRecipeImage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
-                app:cardCornerRadius="8dp">
-
-                <ImageView
-                    android:id="@+id/ivRecipeImage"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:background="?attr/colorSecondaryVariant"
-                    android:scaleType="centerCrop"
-                    tools:src="@tools:sample/avatars" />
-            </com.google.android.material.card.MaterialCardView>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivRecipeImage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="?attr/colorSecondaryVariant"
+                android:scaleType="centerCrop"
+                tools:layout_editor_absoluteY="4dp"
+                app:srcCompat="@drawable/img_1"
+                tools:src="@tools:sample/avatars" />
 
             <TextView
                 android:id="@+id/tvRecipeName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/cvRecipeImage"
-                android:layout_marginStart="16dp"
-                android:layout_toEndOf="@+id/cvRecipeImage"
                 android:fontFamily="@font/quicksand_bold"
-                android:textSize="20sp"
-                tools:text="Name" />
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="4dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                tools:text="Name 21431241243124 421412512512" />
 
-            <ImageView
-                android:id="@+id/ivRecipeAttribute"
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:layout_alignBottom="@+id/cvRecipeImage"
-                android:layout_marginStart="16dp"
-                android:layout_marginBottom="4dp"
-                android:layout_toEndOf="@+id/cvRecipeImage"
-                tools:src="@drawable/ic_round_location_on_24" />
-
-
-        </RelativeLayout>
+        </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
