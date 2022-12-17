@@ -90,7 +90,6 @@ class RecipeListViewModel @Inject constructor(
         val recipes = uiState.value.recipes
 //        TimberAppLogger.d(recipes.toString())
         viewModelScope.launch {
-            _uiState.value = uiState.value.copy(isLoading = true)
             try {
                 if (qSearchRecipe.isEmpty()) {
                     getRecipes()
@@ -99,7 +98,6 @@ class RecipeListViewModel @Inject constructor(
                 val responseSearch = recipes.filter { recipe ->
                     recipe.name.lowercase().contains(qSearchRecipe.lowercase())
                 }
-                _uiState.value = uiState.value.copy(isLoading = false)
                 _uiState.value = uiState.value.copy(recipes = responseSearch)
             } catch (e: Exception) {
                 onTriggerEvent(

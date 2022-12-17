@@ -8,6 +8,7 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
 import com.rogergcc.yapechallenge.R
 import com.rogergcc.yapechallenge.databinding.FragmentRecipeDetailsBinding
@@ -22,7 +23,7 @@ class RecipeDetailsFragment : Fragment(R.layout.fragment_recipe_details) {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentRecipeDetailsBinding.inflate(layoutInflater, container, false)
         return binding.root
@@ -33,6 +34,16 @@ class RecipeDetailsFragment : Fragment(R.layout.fragment_recipe_details) {
 
         collectUIState()
         collectUIEvents()
+        binding.ivUbicationMap.setOnClickListener {
+            navigateToRecipeDetailsScreen()
+        }
+    }
+
+    private fun navigateToRecipeDetailsScreen(
+    ) {
+        val action = RecipeDetailsFragmentDirections.actionRecipeDetailsFragmentToMapsFragment(
+        )
+        findNavController().navigate(action)
     }
 
     private fun collectUIState() = viewLifecycleOwner.lifecycleScope.launchWhenStarted {
@@ -43,7 +54,6 @@ class RecipeDetailsFragment : Fragment(R.layout.fragment_recipe_details) {
                     state.recipe?.let { recipe ->
                         ivRecipeImage.loadImage(imgUrl = recipe.image)
                         tvRecipeName.text = recipe.name
-
 
                     }
                 }

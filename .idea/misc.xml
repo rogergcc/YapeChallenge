@@ -6,13 +6,16 @@
         <entry key="..\:/Convocatorias-Postulaciones/YAPE_2022_DECEMBER/YapeChallenge/app/src/main/res/drawable/container_background.xml" value="0.248" />
         <entry key="..\:/Convocatorias-Postulaciones/YAPE_2022_DECEMBER/YapeChallenge/app/src/main/res/drawable/hero_iv_error.xml" value="0.2405" />
         <entry key="..\:/Convocatorias-Postulaciones/YAPE_2022_DECEMBER/YapeChallenge/app/src/main/res/drawable/hero_iv_placeholder.xml" value="0.1945" />
+        <entry key="..\:/Convocatorias-Postulaciones/YAPE_2022_DECEMBER/YapeChallenge/app/src/main/res/drawable/ic_round_location_on_24.xml" value="0.244" />
         <entry key="..\:/Convocatorias-Postulaciones/YAPE_2022_DECEMBER/YapeChallenge/app/src/main/res/drawable/ic_search_black_24dp.xml" value="0.248" />
         <entry key="..\:/Convocatorias-Postulaciones/YAPE_2022_DECEMBER/YapeChallenge/app/src/main/res/drawable/recipe_iv_placeholder.xml" value="0.2095" />
         <entry key="..\:/Convocatorias-Postulaciones/YAPE_2022_DECEMBER/YapeChallenge/app/src/main/res/font/quicksand_semibold.xml" value="0.2859375" />
         <entry key="..\:/Convocatorias-Postulaciones/YAPE_2022_DECEMBER/YapeChallenge/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Convocatorias-Postulaciones/YAPE_2022_DECEMBER/YapeChallenge/app/src/main/res/layout/fragment_hero_details.xml" value="0.18645833333333334" />
         <entry key="..\:/Convocatorias-Postulaciones/YAPE_2022_DECEMBER/YapeChallenge/app/src/main/res/layout/fragment_home.xml" value="0.5" />
+        <entry key="..\:/Convocatorias-Postulaciones/YAPE_2022_DECEMBER/YapeChallenge/app/src/main/res/layout/fragment_maps.xml" value="0.28229166666666666" />
         <entry key="..\:/Convocatorias-Postulaciones/YAPE_2022_DECEMBER/YapeChallenge/app/src/main/res/layout/fragment_recipe_details.xml" value="0.33" />
+        <entry key="..\:/Convocatorias-Postulaciones/YAPE_2022_DECEMBER/YapeChallenge/app/src/main/res/layout/fragment_recipe_map.xml" value="0.2578125" />
         <entry key="..\:/Convocatorias-Postulaciones/YAPE_2022_DECEMBER/YapeChallenge/app/src/main/res/layout/recipe_item.xml" value="0.33" />
       </map>
     </option>

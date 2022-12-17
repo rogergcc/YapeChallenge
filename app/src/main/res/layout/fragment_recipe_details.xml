@@ -36,7 +36,13 @@
                     android:textSize="24sp"
                     tools:text="Name" />
 
-
+                <ImageView
+                    android:id="@+id/ivUbicationMap"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_round_location_on_24"
+                    tools:src="@tools:sample/avatars" />
             </RelativeLayout>
 
         </com.google.android.material.card.MaterialCardView>

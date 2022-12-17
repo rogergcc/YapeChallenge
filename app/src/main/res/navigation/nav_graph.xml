@@ -26,5 +26,13 @@
             android:name="recipeDetail"
             app:argType="com.rogergcc.yapechallenge.domain.model.Recipe"
             app:nullable="true" />
+        <action
+            android:id="@+id/action_recipeDetailsFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.rogergcc.yapechallenge.presentation.recipes_maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>
