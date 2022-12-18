@@ -2,7 +2,7 @@
 
 ## :mag: Insights into the app
 
-Application fetching heroes
+Application fetching Recipes
 
 data from recipe api generate with Postman Mock Server
 
