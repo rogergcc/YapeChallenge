@@ -54,7 +54,7 @@ class RecipeDetailsFragment : Fragment(R.layout.fragment_recipe_details) {
                     state.recipe?.let { recipe ->
                         ivRecipeImage.loadImage(imgUrl = recipe.image)
                         tvRecipeName.text = recipe.name
-
+                        tvSteps.text = recipe.steps.joinToString(separator = "\n")
                     }
                 }
             }
