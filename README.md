@@ -8,6 +8,8 @@ data from recipe api generate with Postman Mock Server
 
 Showcasing Clean Code and MVVM Architecture, with SOLID principles
 
+Design Patterns Singleton, Adapter, Observer, Repository
+
 ## Built With 🛠
 
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android
@@ -15,8 +17,8 @@ Showcasing Clean Code and MVVM Architecture, with SOLID principles
 - [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - For asynchronous
   and more..
 - [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/)
-  - A cold asynchronous data stream that sequentially emits values and completes normally or with an
-  exception.
+    - A cold asynchronous data stream that sequentially emits values and completes normally or with
+      an exception.
 - [StateFlow](https://developer.android.com/kotlin/flow/stateflow-and-sharedflow) - StateFlow is a
   state-holder observable flow that emits the current and new state updates to its collectors.
 - [SharedFlow](https://developer.android.com/kotlin/flow/stateflow-and-sharedflow) - A SharedFlow is

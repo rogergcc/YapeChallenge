@@ -65,6 +65,7 @@ class GetRecipesTest {
         assert((emissions[2] as Resource.Loading).isLoading.not())
     }
 
+
     @After
     fun teardown() {
         mockWebServer.shutdown()
