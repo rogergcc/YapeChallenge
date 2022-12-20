@@ -41,4 +41,7 @@ Showcasing Clean Code and MVVM Architecture, with SOLID principles
 - [Coil](https://github.com/coil-kt/coil) - An image loading library for Android backed by Kotlin
   Coroutines.
 - [Material Components for Android](https://github.com/material-components/material-components-android)
-  - Modular and customizable Material Design UI components for Android.
+    - Modular and customizable Material Design UI components for Android.
+- [Mock Web Server](https://github.com/square/okhttp/tree/master/mockwebserver)
+    - mock HTTP calls in tests. The library offers many features that make testing functions that
+      depend on HTTP calls

@@ -18,7 +18,7 @@
         android:autofillHints=""
         android:background="@drawable/container_background"
         android:drawableStart="@drawable/ic_search_black_24dp"
-        android:hint="Search Here"
+        android:hint="@string/text_search_here"
         android:imeOptions="actionSearch"
         android:inputType="text|textNoSuggestions"
 
@@ -43,7 +43,7 @@
         android:theme="@style/AppSearchView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:queryHint="Search Breed" />
+        app:queryHint="Search " />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRecipesList"

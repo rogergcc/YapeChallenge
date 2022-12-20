@@ -51,7 +51,7 @@
                 tools:layout_editor_absoluteY="4dp"
                 android:ellipsize="end"
                 android:maxLines="2"
-                tools:text="Name 21431241243124 421412512512" />
+                tools:text="@string/text_name" />
 
         </LinearLayout>
 
