@@ -40,7 +40,6 @@ class RecipeListAdapter : ListAdapter<Recipe, RecipeListAdapter.ViewHolder>(Diff
                 tvRecipeName.text = recipe.name
                 ivRecipeImage.loadImage(imgUrl = recipe.image)
 
-
                 // onItemClickListener
                 mCVRecipe.setOnClickListener {
                     onItemClickListener?.let { itemSelected ->

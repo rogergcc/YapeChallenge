@@ -12,6 +12,8 @@
         android:layout_marginVertical="5dp"
         android:clickable="true"
         android:focusable="true"
+        app:strokeColor="?attr/colorOnSecondary"
+        app:strokeWidth="3dp"
         android:foreground="?android:selectableItemBackground"
         app:cardCornerRadius="6dp"
         app:cardElevation="0dp"
@@ -35,7 +37,7 @@
                 android:id="@+id/ivRecipeImage"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="?attr/colorSecondaryVariant"
+                android:background="?attr/colorOnSecondary"
                 android:scaleType="centerCrop"
                 tools:layout_editor_absoluteY="4dp"
                 app:srcCompat="@drawable/img_1"
@@ -52,6 +54,7 @@
                 android:ellipsize="end"
                 android:maxLines="2"
                 tools:text="@string/text_name" />
+
 
         </LinearLayout>
 
