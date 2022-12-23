@@ -10,6 +10,10 @@ Showcasing Clean Code and MVVM Architecture, with SOLID principles
 
 Design Patterns Singleton, Adapter, Observer, Repository
 
+## Setup Project
+
+define a new property in your project's local.properties file (e.g. MAPS_API_KEY=Aiza...)
+
 ## Architecture and Stack Overview
 
 ![MVVM](https://user-images.githubusercontent.com/18008332/208737290-a25ff112-eef8-4d2e-8f3b-e79fad7ba821.png)
